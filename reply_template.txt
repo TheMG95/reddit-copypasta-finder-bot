@@ -1,0 +1,5 @@
+> [$title]($url)$nsfw$spoiler
+
+$body
+
+^(Beep Boop I am a bot made by [u/MasterGamer9595](https://reddit.com/u/MasterGamer9595) | [Source code](https://github.com/TheMG95/reddit-copypasta-finder-bot))
