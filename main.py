@@ -4,6 +4,7 @@ import praw.exceptions
 import threading
 import string
 import os
+import time
 
 
 def create_reply(**kwargs):
@@ -94,6 +95,7 @@ def main():
 
 if __name__ == '__main__':
     # Define global variables
+    start_time = time.time()
 
     reddit = praw.Reddit(
         client_id=os.getenv("CLIENT_ID"),
@@ -116,3 +118,5 @@ if __name__ == '__main__':
     replies_to_send: list = []
 
     main()
+
+    print(f"Executed in {round(time.time() - start_time, 2)} seconds.")
