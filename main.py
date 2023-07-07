@@ -90,8 +90,6 @@ def main():
     for reply in replies_to_send:
         reply["comment"].reply(reply["reply"])
 
-    # reply_storage.update_one({"_id": 0}, {"$set": {"last_replied": mentions[0].id}})
-
 
 if __name__ == '__main__':
     # Define global variables
